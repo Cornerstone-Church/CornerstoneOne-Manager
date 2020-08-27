@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -14,7 +15,33 @@
   <title>co_manager</title>
   <link rel="manifest" href="/manifest.json">
 </head>
+
 <body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBaZkCdGVXm7Ar6zHCrKIkQfJh50F0oVvc",
+      authDomain: "cag-zalem-32e6e.firebaseapp.com",
+      databaseURL: "https://cag-zalem-32e6e.firebaseio.com",
+      projectId: "cag-zalem-32e6e",
+      storageBucket: "cag-zalem-32e6e.appspot.com",
+      messagingSenderId: "829120399131",
+      appId: "1:829120399131:web:14674fc15ed2f1d14075be",
+      measurementId: "G-ZVKR890CK0"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <!-- Launch app -->
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
+
 </html>
